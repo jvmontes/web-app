@@ -104,7 +104,6 @@ function maximizedArray(array1, array2) {
         var i = array1[counterA];
         var j = array2[counterB];
 
-        console.log(i, j);
         if (i >= j) {
             if (outputArray.includes(i) === false) {
                 outputArray.push(i);
@@ -120,7 +119,8 @@ function maximizedArray(array1, array2) {
         }
     }
 
-    console.log(outputArray);
+    return outputArray;
 }
 
-maximizedArray(arr1, arr2);
+let result = maximizedArray(arr1, arr2);
+console.log(result);
